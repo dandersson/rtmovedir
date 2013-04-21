@@ -54,7 +54,7 @@ def main():
     # Some magic to allow Python printing UTF-8 according to the recipient's
     # reported capabilities; see <http://stackoverflow.com/a/4546129/445621>
     sys.stdout = codecs.getwriter(locale.getpreferredencoding())(sys.stdout)
-    
+
     argparser = argparse.ArgumentParser(
             description='Change directories of rTorrent downloads via regexp '
                         'replacement.')
